@@ -16,3 +16,9 @@ print(mysum(25,60))
 # Create the same sum function using the lambda
 myjihad =lambda x , y : x + y
 print(myjihad(13,63))
+
+# Write the difference between the local variable and global variable:
+# Global variables are declared outside the functions whereas local variables are declared within the functions.
+# Local variables are created when the function starts its execution and are lost when the function ends.
+# Global variables, on the other hand, are created as the execution of the program begins and are lost when
+# the program is ended.
