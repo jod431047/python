@@ -13,7 +13,9 @@ class Bank:
         self.balance = 0
 
     def withdraw(self,amount):
-        print(f'you do not have enough balance :{self.balance}')
+        if (self.balance - amount) < -501:
+            print(self.balance - amount)
+            print(f'you do not have enough balance :{self.balance}')
         else:
          self.balance -= amount
          self.show_balance()
@@ -33,8 +35,10 @@ class Bank:
 
 c1 = Bank('ahmad' , 23)
 
-c1.deposite(500)
 c1.withdraw(200)
+c1.withdraw(200)
+c1.withdraw(100)
+
 c1.show_details()
 c1.show_balance()
 
