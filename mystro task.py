@@ -5,17 +5,25 @@ Bank :
 -show details
 -show balance
 '''
-class Bank:
+class User:
     def __init__(self,name,age):
         print(f'welcome {name}')
         self.name =name
         self.age = age
-        self.balance = 0
 
-    def withdraw(self,amount):
+
+    def show_details(self):
+            print(f'Name :{self.name}')
+            print(f'Age : {self.age}')
+
+class Bank(user):
+    def __init__(self,name,age):
+        super().__init__(name,age)
+      self.balance = 0
+     def withdraw(self,amount):
         if amount > self.balance:
             print(f'you do not have enough balance :{self.balance}')
-        else:
+            return
          self.balance -= amount
          self.show_balance()
 
@@ -23,9 +31,6 @@ class Bank:
         self.balance += amount
         self.show_balance()
 
-     def show_details(self):
-         print(f'Name :{self.name}')
-         print(f'Age : {self.age}')
 
       def show_balance(self):
           print(f'your corrent balance :{self.balance}')
@@ -49,3 +54,7 @@ c2.withdraw(100)
 c2.show_details()
 c2.show_balance()
 '''
+class : super base main parent #
+
+
+class sub child derived #
