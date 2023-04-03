@@ -7,13 +7,26 @@ Bank :
 '''
 class Bank :
     def __init__(self,name,age):
-        print(f'welcome {name}')
-        balance = 0
+        self.name =name
+        self.age = age
+        self.balance = 0
 
     def withdraw(self,amount):
-        balance -= amount
-        print(f'your current balance : {balance} ')
+        self.balance -= amount
+        print(f'your corrent balance :{self.balance}')
 
-c1 = Bank('ahmad' ,23)
+    def deposite(self,amount):
+        self.balance += amount
+        print(f'your corrent balance :{self.balance}')
+
+     def show_details(self):
+         print(f'Name :{self.name}')
+         print(f'Age : {self.age}')
+
+      def show_details(self):
+
+
+
+c1 = Bank('ahmad' , 23)
 
 
