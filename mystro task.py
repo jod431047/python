@@ -13,8 +13,7 @@ class Bank:
         self.balance = 0
 
     def withdraw(self,amount):
-        if (self.balance - amount) < -501:
-            print(self.balance - amount)
+        if amount > self.balance:
             print(f'you do not have enough balance :{self.balance}')
         else:
          self.balance -= amount
