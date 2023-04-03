@@ -13,12 +13,14 @@ class Bank:
         self.balance = 0
 
     def withdraw(self,amount):
-        self.balance -= amount
-        print(f'your corrent balance :{self.balance}')
+        print(f'you do not have enough balance :{self.balance}')
+        else:
+         self.balance -= amount
+         self.show_balance()
 
     def deposite(self,amount):
         self.balance += amount
-        print(f'your corrent balance :{self.balance}')
+        self.show_balance()
 
      def show_details(self):
          print(f'Name :{self.name}')
@@ -36,3 +38,11 @@ c1.withdraw(200)
 c1.show_details()
 c1.show_balance()
 
+'''
+c2 = Bank('hassan' , 25)
+
+c2.deposite(1000)
+c2.withdraw(100)
+c2.show_details()
+c2.show_balance()
+'''
